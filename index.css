@@ -1,0 +1,259 @@
+:root {
+    --ff-um: 'Poppins';
+    --ff-dois: 'Raleway';
+    --p: 16px;
+    --h2: 31px;
+    --h6: 21.33px;
+    --h5: 28.43px;
+    --h4: 37.90px;
+    --h3: 50.52px;
+    --h1: 89.76px;
+    --cor-um: white;
+    --cor-dois: black;
+    --cor-tres: rgb(255, 115, 0);
+
+}
+
+.subtitulo {
+    padding: 2rem;
+    font-size: var(--h2);
+    text-align: center;
+}
+
+.categorias {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.categorias__link {
+    margin-bottom: 1rem;
+}
+
+.categorias__card {
+    border-radius: 15px;
+    padding: 1rem;
+    min-width: 100%;
+    min-height:5rem;
+    box-shadow: -2px -1px 73px 3000px rgba(0, 0, 0, 0.3) inset;
+    display: flex;
+    align-items: center;
+}
+
+.categorias__link:last-child > .categorias__card {
+    margin-bottom: 0;
+}
+
+.categorias__link:nth-child(1) > .categorias__card {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    background: url("https://images.unsplash.com/photo-1528543606781-2f6e6857f318?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1965&q=80");
+    background-size: 100vh;
+    background-position: center;
+}   
+
+.categorias__link:nth-child(2) > .categorias__card {
+    background: url("https://images.unsplash.com/photo-1614961234274-f204d01c115e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80");
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: center;
+}  
+
+.categorias__link:nth-child(3) > .categorias__card {
+    background: url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+    background-size: cover;
+    background-position: center;
+}  
+
+.categorias__titulo {
+    color: var(--cor-um);
+    font-size: var(--h2);
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+}
+
+.card {
+    margin: 1rem 2rem 2.5rem 2rem;
+}
+
+.card__imagem {
+    min-height: 12rem;
+    border-radius: 15px;
+}
+
+.card__conteudo {
+    padding: 0.5rem;
+}
+
+.card__informacoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0 0.75rem;
+}
+
+.card__informacao {
+    font-weight: 500;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.card__informacao--data {
+    text-align: right;
+}
+
+.card__titulo {
+    margin-bottom: 1.5rem;
+    font-size: var(--h2);
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.card__link {
+    color: var(--cor-tres);
+}
+
+.card__caminhos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card__link {
+    text-decoration: 2px solid underline var(--cor-tres);
+}
+
+.card__ativador {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+#o-que-e-BPM .card__imagem {
+    background: url("https://images.unsplash.com/photo-1532288922150-c04819be02b4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: 150vw;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#boas-praticas-de-hidratacao .card__imagem {
+    background: url("https://images.unsplash.com/photo-1615809265660-21681e60e2bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1854&q=80");
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 320px) {
+    .card__informacao {
+        max-width: unset;
+    }
+}
+
+@media (min-width: 480px) {
+    .card {
+        grid-template-rows: auto;
+        grid-template-columns: 0.9fr 1fr;
+        grid-template-areas:
+            "imagem conteudo";
+    }
+
+    .card__imagem {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 15px;
+    }
+}
+
+@media (min-width: 600px) {
+    .cards {
+        padding: 1rem 2rem;
+    }
+
+    .nav-paginas {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 2rem;
+    }
+
+    .nav-paginas__item {
+        padding: 0 0.5rem;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .nav-paginas__item--atual {
+        border-bottom: 4px solid var(--cor-tres);
+    }
+
+    .nav-paginas__link {
+        color: var(--cor-dois);
+    }
+
+    .rodape {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-areas:
+        "destaques destaques"
+        "cards nav-paginas"
+        "cards nav-artigos"
+        "cards .";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto auto auto;
+    }
+
+    .destaques {
+        grid-area: destaques;
+    }
+
+    .destaques__titulo-principal {
+        top: 1rem;
+        left: 7rem;
+        font-size: 26px;
+    }
+
+    .destaques__titulo {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    .destaques__slide {
+        padding-left: 8rem;
+    }
+
+    .nav-paginas {
+        grid-area: nav-paginas;
+        margin: 2rem 2rem 1rem 0;
+    }
+
+    .nav-artigos {
+        grid-area: nav-artigos;
+        margin: 0 2rem 1rem 0;
+    }
+    
+    .cards {
+        grid-area: cards;
+        padding: 2rem;
+    }
+
+    .card {
+        display: grid;
+        grid-template-areas:
+            "imagem"
+            "conteudo";
+        grid-template-columns: 1fr;
+        grid-template-rows: 12rem auto;
+        margin-bottom: 2rem;
+    }
+
+    .card__imagem {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0;
+    }
+}

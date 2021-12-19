@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>health+ | Início</title>
+    <link rel="stylesheet" href="fontes.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="artigos.css" type="text/css">
+</head>
+<body class="grid-principal">
+    <nav class="nav-bar">
+        <div class="nav-bar__fileira-topo">
+            <button class="nav-bar__ativador nav-bar__ativador--menu">
+                <span class="material-icons-outlined">menu</span>
+            </button>
+            <h1 class="nav-bar__logo">
+                <a href="index.html" class="nav-bar__link">health<span>+</span></a>
+            </h1>
+            <button class="nav-bar__ativador nav-bar__ativador--pesquisa">
+                <span class="material-icons-outlined">search</span>
+            </button>
+        </div>
+    </nav>
+    <ul class="nav-menu">
+        <button class="nav-menu__ativador"><span class="material-icons-outlined">close</span></button>
+        <li class="nav-menu__item">
+            <a href="index.html" class="nav-menu__link">Início</a>
+        </li>
+        <li class="nav-menu__item">
+            <a href="artigos.html" class="nav-menu__link">Artigos</a>
+        </li>
+        <li class="nav-menu__item">
+            <a href="sobre-nos.html" class="nav-menu__link">Sobre Nós</a>
+        </li>
+        <li class="nav-menu__item">
+            <a href="index.html" class="nav-menu__link">Contato</a>
+        </li>
+    </ul>
+    <input type="search" placeholder="Digite sua busca aqui" class="nav-bar__pesquisa">
+    <!-- Input fora do nav para não impedir click em elementos por causa de z-index -->
+    <main>
+        <nav class="nav-artigos">
+            <h2 class="nav-artigos__titulo">Artigos</h2>
+            <ul class="nav-artigos__lista">
+                <li class="nav-artigos__item">
+                    <a class="nav-artigos__categoria nav-artigos__categoria--atual">Ativ. Física</a>
+                </li>
+                <li class="nav-artigos__item">
+                    <a class="nav-artigos__categoria">Alimentação</a>
+                </li>
+                <li class="nav-artigos__item">
+                    <a class="nav-artigos__categoria">Saúde</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="cards">
+            <article class="card" id="o-que-e-BPM">
+                <div class="card__imagem"></div>
+                <div class="card__conteudo">
+                    <ul class="card__informacoes">
+                        <li class="card__informacao card__informacao--autor">Vinicius Felicio</li>
+                        <li class="card__informacao card__informacao--data">16 Dez. 2021</li>
+                    </ul>
+                    <h3 class="card__titulo">O que é "BPM"?</h3>
+                    <ul class="card__caminhos">
+                        <li class="card__caminho">
+                            <a href="o-que-e-BPM.html" class="card__link">Ler Artigo</a>
+                        </li>
+                        <li class="card__caminho">
+                            <button class="card__ativador"><span class="material-icons-outlined">share</span></button>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="card" id="boas-praticas-de-hidratacao">
+                <div class="card__imagem"></div>
+                <div class="card__conteudo">
+                    <ul class="card__informacoes">
+                        <li class="card__informacao card__informacao--autor">Vinicius Felicio</li>
+                        <li class="card__informacao card__informacao--data">16 Dez. 2021</li>
+                    </ul>
+                    <h3 class="card__titulo">Boas práticas de hidratação</h3>
+                    <ul class="card__caminhos">
+                        <li class="card__caminho">
+                            <a href="#" class="card__link">Ler Artigo</a>
+                        </li>
+                        <li class="card__caminho">
+                            <button class="card__ativador"><span class="material-icons-outlined">share</span></button>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer class="rodape">
+        <h4 class="rodape__logo">health<span>+</span></h4>
+        <ul class="rodape__lista">
+            <li class="rodape__item">
+                <h4 class="rodape__titulo">Site</h4>
+            </li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Sobre nós</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Termos de Serviço</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Contato</a></li>
+        </ul>
+        <ul class="rodape__lista rodape__lista--direita">
+            <li class="rodape__item">
+                <h4 class="rodape__titulo">Redes Sociais</h4>
+            </li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Facebook</a></li>
+            <li class="rodape__item"><a href="#" class="rodape__link">Twitter</a></li>
+        </ul>
+    </footer>
+    <script src="nav.js"></script>
+</body>
